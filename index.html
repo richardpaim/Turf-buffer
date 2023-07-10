@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffer</title>
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+</head>
+<style>
+    #map { height: 55rem;
+             
+        }
+        #loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+#loading img {
+  width: 100px;
+  height: 100px;
+}
+.buffer-20 {
+  background-color: yellow !important;
+}
+
+.buffer-6 {
+  background-color: orange !important;
+}
+
+.buffer-2 {
+  background-color: red !important;
+}
+</style>
+<style>
+#table-refi { 
+    cursor: pointer;
+
+}
+</style>
+<body>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-6">
+            <div id="loading">
+                <img src="Radar.gif" alt="Loading..." /> 
+                <span>Realizando leitura dos Focos de Calor nas áreas do Buffer...</span>              
+              </div>              
+            <div id="map"></div>  
+        </div>
+        <div class="col-6">
+            <table class="table table-hover" id="table-refi">
+                <thead>
+                  <tr>
+                    <th scope="col">Refinaria</th>
+                  </tr>
+                </thead>
+                <tbody class="list_refinarias">
+
+                </tbody>
+              </table>
+        </div>
+    </div>
+    </div>
+
+   
+      
+    
+
+    
+    
+    <script src="node_modules/leaflet/dist/leaflet.js"></script>    
+    <script src="node_modules/@turf/turf/turf.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script src="main.js"></script>
+    <!-- <script src='omnivore.js'></script> -->
+
+    
+</body>
+</html>

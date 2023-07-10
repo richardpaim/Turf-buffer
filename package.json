@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "bootstrap": "^5.3.0",
+    "leaflet": "^1.9.4",
+    "normalize.css": "^8.0.1"
+  }
+}
