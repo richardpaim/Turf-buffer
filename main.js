@@ -120,14 +120,14 @@ features.features.forEach(function(feature, index) {
 
   var centroid = turf.centroid(feature);
   var distance = 0;
-
+/*
   if (index === 1) {
     // Verificar se há eventos apenas para o índice 8 (Henrique Lage)
     if (isEventInBuffer(centroid, buffered)) {
       distance = 20; // Buffer de 20km
       td.classList.add('buffer-20');
     }
-  }
+  }*/
 
   td.addEventListener('click', function() {
     var pointLayer = L.geoJSON(feature).addTo(map);
