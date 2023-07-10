@@ -91,9 +91,7 @@ params.append('typeName', 'painel_do_fogo:mv_evento_filtro');
 params.append('outputFormat', 'application/json');
 // params.append('CQL_FILTER', `dt_minima >= '2020-06-01T00:00:00.000Z' AND dt_maxima <= '2020-06-31T23:59:59.999Z'`);
 
-fetch('mv_evento_filtro.json',
-
-})
+fetch('mv_evento_filtro.json',)
   .then(function(response) {
     return response.json();
   }).then(function(data) {
