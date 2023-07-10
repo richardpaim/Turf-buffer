@@ -93,7 +93,7 @@ params.append('outputFormat', 'application/json');
 
 fetch(`https://panorama.sipam.gov.br/geoserver/painel_do_fogo/ows?${params.toString()}`,
 {
-  mode: 'no-cors'
+  mode: 'cors'
 })
   .then(function(response) {
     return response.json();
