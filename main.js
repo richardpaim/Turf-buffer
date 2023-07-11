@@ -19,10 +19,10 @@ var map = L.map('map', {
 // Criando os pontos e adicionando-os ao mapa
 var features = turf.featureCollection([
   turf.point([-34.9724, -8.3952], {"name": "Refinaria: Abreu e Lima - Ipojuca-PE" }),
-  turf.point([-43.2699, -22.7199], {"name": "Refinaria: Duque de Caxias" }),
-  turf.point([-44.0962, -19.9756], {"name": "Refinaria: Gabriel Passos - Betim-BH" }),
+  turf.point([-43.2699, -22.7199], {"name": "Refinaria: Duque de Caxias - RJ" }),
+  turf.point([-44.0962, -19.9756], {"name": "Refinaria: Gabriel Passos - Betim-MG" }),
   turf.point([-49.3607, -25.5679], {"name": "Refinaria: Presidente Getúlio Vargas - Araucária-PR" }),
-  turf.point([-38.5718, -12.7076], {"name": "Refinaria: Landulpho Alves - São Francisco do Conde-BH" }),
+  turf.point([-38.5718, -12.7076], {"name": "Refinaria: Landulpho Alves - São Francisco do Conde-BA" }),
   turf.point([-59.9538, -3.1464],  {"name": "Refinaria: Isaac Sabbá - Manaus-AM" }),
   turf.point([-51.1627, -29.8716 ], {"name": "Refinaria: Alberto Pasqualini - Canoas-RS - Esteio-RS"}),
   turf.point([-45.8242, -23.1930 ], {"name": "Refinaria: Henrique Lage - São José dos Campos-SP"}),
